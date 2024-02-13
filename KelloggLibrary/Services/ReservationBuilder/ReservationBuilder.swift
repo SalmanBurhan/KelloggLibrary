@@ -6,12 +6,15 @@
 //
 
 import Foundation
+import Combine
 
 /// A class responsible for building reservation requests.
 class ReservationBuilder: ObservableObject {
 
   /// The `LibCalService` used for retrieving available slots.
   private var libCalService: LibCalService
+
+  private var cancellables = Set<AnyCancellable>()
 
   /// The range of available dates for the reservation.
   @Published var availableDates: ClosedRange<Date>
@@ -26,7 +29,7 @@ class ReservationBuilder: ObservableObject {
   @Published var date: Date {
     didSet {
       print("Did Set Reservation Request Date To \(date.iso8601FormattedDate)")
-      self.updateStartTimes()
+      self.updateAvailability()
     }
   }
 
@@ -62,8 +65,29 @@ class ReservationBuilder: ObservableObject {
       calendar.date(from: startComponents)!...calendar.date(from: endComponents)!
     self.date = today
     self.libCalService = service
+    self.libCalService.$availableSlots.sink { [weak self] _ in
+      self?.updateStartTimes()
+    }.store(in: &cancellables)
+    self.updateAvailability()
   }
 
+  func updateAvailability() {
+    Task {
+      print("Updating availability")
+      do {
+        try await libCalService
+          .updateAvailability(
+            with: AvailabilityRequest(
+              locationID: libCalService.locationID,
+              start: date
+            )
+          )
+      } catch {
+        print("error updating availability: \(error)")
+      }
+    }
+  }
+  
   /// Resets the available start times to an empty array.
   func resetStartTimes() {
     DispatchQueue.main.async {
@@ -104,6 +128,8 @@ class ReservationBuilder: ObservableObject {
       .availableSlots
       .filter { $0.start > startTime && $0.end <= largestTimeInterval }
       .map { $0.end }
+      .sorted()
+      .unique()
     DispatchQueue.main.async {
       self.availableEndTimes = newEndTimes
     }
