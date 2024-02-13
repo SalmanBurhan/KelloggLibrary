@@ -1,0 +1,339 @@
+{
+    "id": 17755,
+    "name": "Kellogg Library",
+    "baseURL": "https://csusm.libcal.com",
+    "floors": [
+        {
+            "id": 8673,
+            "level": 5
+        },
+        {
+            "id": 8860,
+            "level": 4
+        },
+        {
+            "id": 8861,
+            "level": 3
+        }
+    ],
+    "categories": [
+        {
+            "id": 37560,
+            "name": "Group Study Rooms"
+        },
+        {
+            "id": 38436,
+            "name": "Zoom Rooms"
+        },
+        {
+            "id": 40196,
+            "name": "Group Study Room 5th Floor"
+        }
+    ],
+    "capacities": [
+        {
+            "id": 1,
+            "minimum": 1,
+            "maximum": 4
+        },
+        {
+            "id": 3,
+            "minimum": 9,
+            "maximum": 12
+        },
+        {
+            "id": 2,
+            "minimum": 5,
+            "maximum": 8
+        }
+    ],
+    "rooms": [
+        {
+            "id": 153516,
+            "name": "4001",
+            "floorID": 8860,
+            "categoryID": 37560,
+            "capacityID": 2
+        },
+        {
+            "id": 153518,
+            "name": "4004",
+            "floorID": 8860,
+            "categoryID": 37560,
+            "capacityID": 2
+        },
+        {
+            "id": 153519,
+            "name": "4102",
+            "floorID": 8860,
+            "categoryID": 37560,
+            "capacityID": 2
+        },
+        {
+            "id": 153520,
+            "name": "4103",
+            "floorID": 8860,
+            "categoryID": 37560,
+            "capacityID": 2
+        },
+        {
+            "id": 153521,
+            "name": "4104",
+            "floorID": 8860,
+            "categoryID": 37560,
+            "capacityID": 2
+        },
+        {
+            "id": 153522,
+            "name": "4105",
+            "floorID": 8860,
+            "categoryID": 37560,
+            "capacityID": 2
+        },
+        {
+            "id": 153523,
+            "name": "4106",
+            "floorID": 8860,
+            "categoryID": 37560,
+            "capacityID": 2
+        },
+        {
+            "id": 153524,
+            "name": "4107",
+            "floorID": 8860,
+            "categoryID": 37560,
+            "capacityID": 2
+        },
+        {
+            "id": 153527,
+            "name": "4310",
+            "floorID": 8860,
+            "categoryID": 37560,
+            "capacityID": 2
+        },
+        {
+            "id": 153528,
+            "name": "4311",
+            "floorID": 8860,
+            "categoryID": 37560,
+            "capacityID": 2
+        },
+        {
+            "id": 153529,
+            "name": "4312",
+            "floorID": 8860,
+            "categoryID": 37560,
+            "capacityID": 2
+        },
+        {
+            "id": 153530,
+            "name": "4313",
+            "floorID": 8860,
+            "categoryID": 37560,
+            "capacityID": 2
+        },
+        {
+            "id": 153531,
+            "name": "4314",
+            "floorID": 8860,
+            "categoryID": 37560,
+            "capacityID": 2
+        },
+        {
+            "id": 153532,
+            "name": "4315",
+            "floorID": 8860,
+            "categoryID": 37560,
+            "capacityID": 2
+        },
+        {
+            "id": 153533,
+            "name": "4410",
+            "floorID": 8860,
+            "categoryID": 37560,
+            "capacityID": 2
+        },
+        {
+            "id": 153534,
+            "name": "4411",
+            "floorID": 8860,
+            "categoryID": 37560,
+            "capacityID": 2
+        },
+        {
+            "id": 162409,
+            "name": "4412",
+            "floorID": 8860,
+            "categoryID": 37560,
+            "capacityID": 2
+        },
+        {
+            "id": 162410,
+            "name": "4413",
+            "floorID": 8860,
+            "categoryID": 37560,
+            "capacityID": 2
+        },
+        {
+            "id": 151243,
+            "name": "5302",
+            "floorID": 8673,
+            "categoryID": 40196,
+            "capacityID": 2
+        },
+        {
+            "id": 151244,
+            "name": "5303",
+            "floorID": 8673,
+            "categoryID": 40196,
+            "capacityID": 2
+        },
+        {
+            "id": 151245,
+            "name": "5304",
+            "floorID": 8673,
+            "categoryID": 40196,
+            "capacityID": 2
+        },
+        {
+            "id": 151246,
+            "name": "5305",
+            "floorID": 8673,
+            "categoryID": 40196,
+            "capacityID": 2
+        },
+        {
+            "id": 151247,
+            "name": "5306",
+            "floorID": 8673,
+            "categoryID": 40196,
+            "capacityID": 2
+        },
+        {
+            "id": 151248,
+            "name": "5307",
+            "floorID": 8673,
+            "categoryID": 40196,
+            "capacityID": 2
+        },
+        {
+            "id": 151249,
+            "name": "5311",
+            "floorID": 8673,
+            "categoryID": 40196,
+            "capacityID": 2
+        },
+        {
+            "id": 151250,
+            "name": "5312",
+            "floorID": 8673,
+            "categoryID": 40196,
+            "capacityID": 2
+        },
+        {
+            "id": 151251,
+            "name": "5313",
+            "floorID": 8673,
+            "categoryID": 40196,
+            "capacityID": 2
+        },
+        {
+            "id": 151252,
+            "name": "5314",
+            "floorID": 8673,
+            "categoryID": 40196,
+            "capacityID": 2
+        },
+        {
+            "id": 151253,
+            "name": "5315",
+            "floorID": 8673,
+            "categoryID": 40196,
+            "capacityID": 2
+        },
+        {
+            "id": 151254,
+            "name": "5316",
+            "floorID": 8673,
+            "categoryID": 40196,
+            "capacityID": 2
+        },
+        {
+            "id": 153517,
+            "name": "4002",
+            "floorID": 8860,
+            "categoryID": 37560,
+            "capacityID": 3
+        },
+        {
+            "id": 153525,
+            "name": "4306",
+            "floorID": 8860,
+            "categoryID": 37560,
+            "capacityID": 3
+        },
+        {
+            "id": 153526,
+            "name": "4307",
+            "floorID": 8860,
+            "categoryID": 37560,
+            "capacityID": 3
+        },
+        {
+            "id": 162411,
+            "name": "4414",
+            "floorID": 8860,
+            "categoryID": 37560,
+            "capacityID": 3
+        },
+        {
+            "id": 151241,
+            "name": "5108",
+            "floorID": 8673,
+            "categoryID": 40196,
+            "capacityID": 3
+        },
+        {
+            "id": 151242,
+            "name": "5109",
+            "floorID": 8673,
+            "categoryID": 40196,
+            "capacityID": 3
+        },
+        {
+            "id": 151255,
+            "name": "5411",
+            "floorID": 8673,
+            "categoryID": 40196,
+            "capacityID": 3
+        },
+        {
+            "id": 153535,
+            "name": "3301-1",
+            "floorID": 8861,
+            "categoryID": 38436,
+            "capacityID": 1
+        },
+        {
+            "id": 153536,
+            "name": "3301-2",
+            "floorID": 8861,
+            "categoryID": 38436,
+            "capacityID": 1
+        },
+        {
+            "id": 153537,
+            "name": "3301-3",
+            "floorID": 8861,
+            "categoryID": 38436,
+            "capacityID": 1
+        },
+        {
+            "id": 153538,
+            "name": "3301-4",
+            "floorID": 8861,
+            "categoryID": 38436,
+            "capacityID": 1
+        }
+    ]
+}
