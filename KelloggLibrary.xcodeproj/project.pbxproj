@@ -13,6 +13,12 @@
 		B56921B32B7BEBAA00298A4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56921B22B7BEBAA00298A4C /* Preview Assets.xcassets */; };
 		B56921BC2B7BEC2B00298A4C /* UniversityLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56921BA2B7BEC2B00298A4C /* UniversityLibrary.swift */; };
 		B56921BD2B7BEC2B00298A4C /* LibraryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56921BB2B7BEC2B00298A4C /* LibraryData.swift */; };
+		B56921C72B7BEF2800298A4C /* LibCalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56921C12B7BEF2700298A4C /* LibCalService.swift */; };
+		B56921C82B7BEF2800298A4C /* AvailabilityResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56921C22B7BEF2700298A4C /* AvailabilityResponse.swift */; };
+		B56921C92B7BEF2800298A4C /* AvailableSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56921C32B7BEF2800298A4C /* AvailableSlot.swift */; };
+		B56921CA2B7BEF2800298A4C /* LibCalEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56921C42B7BEF2800298A4C /* LibCalEndpoint.swift */; };
+		B56921CB2B7BEF2800298A4C /* AvailabilitySlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56921C52B7BEF2800298A4C /* AvailabilitySlot.swift */; };
+		B56921CC2B7BEF2800298A4C /* AvailabilityRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56921C62B7BEF2800298A4C /* AvailabilityRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +29,12 @@
 		B56921B22B7BEBAA00298A4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B56921BA2B7BEC2B00298A4C /* UniversityLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityLibrary.swift; sourceTree = "<group>"; };
 		B56921BB2B7BEC2B00298A4C /* LibraryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryData.swift; sourceTree = "<group>"; };
+		B56921C12B7BEF2700298A4C /* LibCalService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibCalService.swift; sourceTree = "<group>"; };
+		B56921C22B7BEF2700298A4C /* AvailabilityResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailabilityResponse.swift; sourceTree = "<group>"; };
+		B56921C32B7BEF2800298A4C /* AvailableSlot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableSlot.swift; sourceTree = "<group>"; };
+		B56921C42B7BEF2800298A4C /* LibCalEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibCalEndpoint.swift; sourceTree = "<group>"; };
+		B56921C52B7BEF2800298A4C /* AvailabilitySlot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailabilitySlot.swift; sourceTree = "<group>"; };
+		B56921C62B7BEF2800298A4C /* AvailabilityRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailabilityRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +87,7 @@
 		B56921B92B7BEC0800298A4C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B56921C02B7BEF0F00298A4C /* LibCal */,
 				B56921BE2B7BECA100298A4C /* UniversityLibrary */,
 			);
 			path = Services;
@@ -95,6 +108,19 @@
 				B56921BB2B7BEC2B00298A4C /* LibraryData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B56921C02B7BEF0F00298A4C /* LibCal */ = {
+			isa = PBXGroup;
+			children = (
+				B56921C62B7BEF2800298A4C /* AvailabilityRequest.swift */,
+				B56921C22B7BEF2700298A4C /* AvailabilityResponse.swift */,
+				B56921C52B7BEF2800298A4C /* AvailabilitySlot.swift */,
+				B56921C32B7BEF2800298A4C /* AvailableSlot.swift */,
+				B56921C42B7BEF2800298A4C /* LibCalEndpoint.swift */,
+				B56921C12B7BEF2700298A4C /* LibCalService.swift */,
+			);
+			path = LibCal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,9 +194,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B56921AE2B7BEBA800298A4C /* ContentView.swift in Sources */,
+				B56921C82B7BEF2800298A4C /* AvailabilityResponse.swift in Sources */,
 				B56921AC2B7BEBA800298A4C /* KelloggLibraryApp.swift in Sources */,
+				B56921CB2B7BEF2800298A4C /* AvailabilitySlot.swift in Sources */,
+				B56921C72B7BEF2800298A4C /* LibCalService.swift in Sources */,
 				B56921BC2B7BEC2B00298A4C /* UniversityLibrary.swift in Sources */,
 				B56921BD2B7BEC2B00298A4C /* LibraryData.swift in Sources */,
+				B56921C92B7BEF2800298A4C /* AvailableSlot.swift in Sources */,
+				B56921CC2B7BEF2800298A4C /* AvailabilityRequest.swift in Sources */,
+				B56921CA2B7BEF2800298A4C /* LibCalEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
