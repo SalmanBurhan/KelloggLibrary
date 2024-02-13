@@ -11,6 +11,8 @@
 		B56921AE2B7BEBA800298A4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56921AD2B7BEBA800298A4C /* ContentView.swift */; };
 		B56921B02B7BEBAA00298A4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56921AF2B7BEBAA00298A4C /* Assets.xcassets */; };
 		B56921B32B7BEBAA00298A4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56921B22B7BEBAA00298A4C /* Preview Assets.xcassets */; };
+		B56921BC2B7BEC2B00298A4C /* UniversityLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56921BA2B7BEC2B00298A4C /* UniversityLibrary.swift */; };
+		B56921BD2B7BEC2B00298A4C /* LibraryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56921BB2B7BEC2B00298A4C /* LibraryData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		B56921AD2B7BEBA800298A4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B56921AF2B7BEBAA00298A4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B56921B22B7BEBAA00298A4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B56921BA2B7BEC2B00298A4C /* UniversityLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityLibrary.swift; sourceTree = "<group>"; };
+		B56921BB2B7BEC2B00298A4C /* LibraryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 		B56921AA2B7BEBA800298A4C /* KelloggLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				B56921B92B7BEC0800298A4C /* Services */,
 				B56921AB2B7BEBA800298A4C /* KelloggLibraryApp.swift */,
 				B56921AD2B7BEBA800298A4C /* ContentView.swift */,
 				B56921AF2B7BEBAA00298A4C /* Assets.xcassets */,
@@ -65,6 +70,31 @@
 				B56921B22B7BEBAA00298A4C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B56921B92B7BEC0800298A4C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B56921BE2B7BECA100298A4C /* UniversityLibrary */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B56921BE2B7BECA100298A4C /* UniversityLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				B56921BF2B7BECC200298A4C /* Models */,
+				B56921BA2B7BEC2B00298A4C /* UniversityLibrary.swift */,
+			);
+			path = UniversityLibrary;
+			sourceTree = "<group>";
+		};
+		B56921BF2B7BECC200298A4C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B56921BB2B7BEC2B00298A4C /* LibraryData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +169,8 @@
 			files = (
 				B56921AE2B7BEBA800298A4C /* ContentView.swift in Sources */,
 				B56921AC2B7BEBA800298A4C /* KelloggLibraryApp.swift in Sources */,
+				B56921BC2B7BEC2B00298A4C /* UniversityLibrary.swift in Sources */,
+				B56921BD2B7BEC2B00298A4C /* LibraryData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
