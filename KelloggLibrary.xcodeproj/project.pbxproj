@@ -22,6 +22,7 @@
 		B56921CF2B7BF15400298A4C /* KelloggLibrary.json in Resources */ = {isa = PBXBuildFile; fileRef = B56921CE2B7BF15400298A4C /* KelloggLibrary.json */; };
 		B56921D32B7BF1E100298A4C /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56921D12B7BF1E100298A4C /* Array+Extensions.swift */; };
 		B56921D42B7BF1E100298A4C /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56921D22B7BF1E100298A4C /* Date+Extensions.swift */; };
+		B56921D72B7BF29300298A4C /* ReservationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56921D62B7BF29300298A4C /* ReservationBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		B56921CE2B7BF15400298A4C /* KelloggLibrary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = KelloggLibrary.json; sourceTree = "<group>"; };
 		B56921D12B7BF1E100298A4C /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		B56921D22B7BF1E100298A4C /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		B56921D62B7BF29300298A4C /* ReservationBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		B56921B92B7BEC0800298A4C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B56921D52B7BF27D00298A4C /* ReservationBuilder */,
 				B56921C02B7BEF0F00298A4C /* LibCal */,
 				B56921BE2B7BECA100298A4C /* UniversityLibrary */,
 			);
@@ -146,6 +149,14 @@
 				B56921D22B7BF1E100298A4C /* Date+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B56921D52B7BF27D00298A4C /* ReservationBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				B56921D62B7BF29300298A4C /* ReservationBuilder.swift */,
+			);
+			path = ReservationBuilder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B56921AE2B7BEBA800298A4C /* ContentView.swift in Sources */,
+				B56921D72B7BF29300298A4C /* ReservationBuilder.swift in Sources */,
 				B56921C82B7BEF2800298A4C /* AvailabilityResponse.swift in Sources */,
 				B56921AC2B7BEBA800298A4C /* KelloggLibraryApp.swift in Sources */,
 				B56921D32B7BF1E100298A4C /* Array+Extensions.swift in Sources */,

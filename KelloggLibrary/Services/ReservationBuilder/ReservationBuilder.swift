@@ -8,7 +8,7 @@
 import Foundation
 
 /// A class responsible for building reservation requests.
-class ReservationRequestBuilder: ObservableObject {
+class ReservationBuilder: ObservableObject {
 
   /// The `LibCalService` used for retrieving available slots.
   private var libCalService: LibCalService

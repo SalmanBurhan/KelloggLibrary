@@ -14,10 +14,13 @@ struct KelloggLibraryApp: App {
   let library: UniversityLibrary
   /// The LibCalService object that will be used throughout the app
   let libCalService: LibCalService
+  /// The ReservationBuilder object that will be used throughout the app
+  let reservationBuilder: ReservationBuilder
 
   init() {
     library = UniversityLibrary()
     libCalService = LibCalService(for: library)
+    reservationBuilder = ReservationBuilder(service: libCalService)
   }
 
   var body: some Scene {
@@ -25,6 +28,7 @@ struct KelloggLibraryApp: App {
       ContentView()
         .environmentObject(library)
         .environmentObject(libCalService)
+        .environmentObject(reservationBuilder)
     }
   }
 }
