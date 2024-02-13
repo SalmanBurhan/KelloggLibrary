@@ -61,6 +61,7 @@ class LibCalService: ObservableObject {
     let slots = response.slots
     let availableSlots =
       slots
+      .filter { $0.isAvailable }
       .compactMap {
         AvailableSlot(
           room: library.getRoom(by: $0.roomID),
@@ -74,4 +75,47 @@ class LibCalService: ObservableObject {
       self.availableSlots = availableSlots
     }
   }
+
+  /// Filters the available slots based on the specified window of time.
+  ///
+  /// - Parameters:
+  ///   - windowStart: The start date of the time window.
+  ///   - windowEnd: The end date of the time window.
+  /// - Returns: An array of `AvailableSlot` objects that fall within the specified window.
+  func filterSlots(windowStart: Date, windowEnd: Date) -> [AvailableSlot] {
+    // Filter slots that at least start within the given time window
+    let relevantSlots = self.availableSlots.filter {
+      $0.start >= windowStart && $0.start < windowEnd
+    }
+
+    // Group slots by roomID
+    let groupedSlots = Dictionary(grouping: relevantSlots) { $0.room.id }
+
+    // Filter out groups that do not cover the entire window with consecutive slots
+    let validSlots = groupedSlots.compactMapValues { (slots: [AvailableSlot]) -> [AvailableSlot]? in
+      // Ensure slots are sorted by start time
+      let sortedSlots = slots.sorted { $0.start < $1.start }
+
+      // Check for consecutive availability in 30-minute intervals
+      var currentStart = windowStart
+      var consecutiveSlots = [AvailableSlot]()
+
+      for slot in sortedSlots {
+        if slot.start == currentStart && slot.end == currentStart.addingTimeInterval(1800) {  // 1800 seconds = 30 minutes
+          consecutiveSlots.append(slot)
+          currentStart = slot.end  // Move to the next interval
+        }
+
+        if currentStart >= windowEnd {
+          return consecutiveSlots  // Found consecutive slots covering the window
+        }
+      }
+
+      return nil  // Did not cover the entire window with consecutive slots
+    }
+
+    // Flatten the result and return only the slots
+    return Array(validSlots.values.joined())
+  }
+
 }
