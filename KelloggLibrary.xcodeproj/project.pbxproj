@@ -19,6 +19,9 @@
 		B56921CA2B7BEF2800298A4C /* LibCalEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56921C42B7BEF2800298A4C /* LibCalEndpoint.swift */; };
 		B56921CB2B7BEF2800298A4C /* AvailabilitySlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56921C52B7BEF2800298A4C /* AvailabilitySlot.swift */; };
 		B56921CC2B7BEF2800298A4C /* AvailabilityRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56921C62B7BEF2800298A4C /* AvailabilityRequest.swift */; };
+		B56921CF2B7BF15400298A4C /* KelloggLibrary.json in Resources */ = {isa = PBXBuildFile; fileRef = B56921CE2B7BF15400298A4C /* KelloggLibrary.json */; };
+		B56921D32B7BF1E100298A4C /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56921D12B7BF1E100298A4C /* Array+Extensions.swift */; };
+		B56921D42B7BF1E100298A4C /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56921D22B7BF1E100298A4C /* Date+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		B56921C42B7BEF2800298A4C /* LibCalEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibCalEndpoint.swift; sourceTree = "<group>"; };
 		B56921C52B7BEF2800298A4C /* AvailabilitySlot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailabilitySlot.swift; sourceTree = "<group>"; };
 		B56921C62B7BEF2800298A4C /* AvailabilityRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailabilityRequest.swift; sourceTree = "<group>"; };
+		B56921CE2B7BF15400298A4C /* KelloggLibrary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = KelloggLibrary.json; sourceTree = "<group>"; };
+		B56921D12B7BF1E100298A4C /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		B56921D22B7BF1E100298A4C /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,7 @@
 		B56921AA2B7BEBA800298A4C /* KelloggLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				B56921D02B7BF1D200298A4C /* Extensions */,
 				B56921B92B7BEC0800298A4C /* Services */,
 				B56921AB2B7BEBA800298A4C /* KelloggLibraryApp.swift */,
 				B56921AD2B7BEBA800298A4C /* ContentView.swift */,
@@ -98,6 +105,7 @@
 			children = (
 				B56921BF2B7BECC200298A4C /* Models */,
 				B56921BA2B7BEC2B00298A4C /* UniversityLibrary.swift */,
+				B56921CE2B7BF15400298A4C /* KelloggLibrary.json */,
 			);
 			path = UniversityLibrary;
 			sourceTree = "<group>";
@@ -113,14 +121,31 @@
 		B56921C02B7BEF0F00298A4C /* LibCal */ = {
 			isa = PBXGroup;
 			children = (
-				B56921C62B7BEF2800298A4C /* AvailabilityRequest.swift */,
-				B56921C22B7BEF2700298A4C /* AvailabilityResponse.swift */,
-				B56921C52B7BEF2800298A4C /* AvailabilitySlot.swift */,
-				B56921C32B7BEF2800298A4C /* AvailableSlot.swift */,
+				B56921CD2B7BF0C700298A4C /* Models */,
 				B56921C42B7BEF2800298A4C /* LibCalEndpoint.swift */,
 				B56921C12B7BEF2700298A4C /* LibCalService.swift */,
 			);
 			path = LibCal;
+			sourceTree = "<group>";
+		};
+		B56921CD2B7BF0C700298A4C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B56921C62B7BEF2800298A4C /* AvailabilityRequest.swift */,
+				B56921C22B7BEF2700298A4C /* AvailabilityResponse.swift */,
+				B56921C52B7BEF2800298A4C /* AvailabilitySlot.swift */,
+				B56921C32B7BEF2800298A4C /* AvailableSlot.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B56921D02B7BF1D200298A4C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B56921D12B7BF1E100298A4C /* Array+Extensions.swift */,
+				B56921D22B7BF1E100298A4C /* Date+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B56921B32B7BEBAA00298A4C /* Preview Assets.xcassets in Resources */,
+				B56921CF2B7BF15400298A4C /* KelloggLibrary.json in Resources */,
 				B56921B02B7BEBAA00298A4C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +222,9 @@
 				B56921AE2B7BEBA800298A4C /* ContentView.swift in Sources */,
 				B56921C82B7BEF2800298A4C /* AvailabilityResponse.swift in Sources */,
 				B56921AC2B7BEBA800298A4C /* KelloggLibraryApp.swift in Sources */,
+				B56921D32B7BF1E100298A4C /* Array+Extensions.swift in Sources */,
 				B56921CB2B7BEF2800298A4C /* AvailabilitySlot.swift in Sources */,
+				B56921D42B7BF1E100298A4C /* Date+Extensions.swift in Sources */,
 				B56921C72B7BEF2800298A4C /* LibCalService.swift in Sources */,
 				B56921BC2B7BEC2B00298A4C /* UniversityLibrary.swift in Sources */,
 				B56921BD2B7BEC2B00298A4C /* LibraryData.swift in Sources */,
